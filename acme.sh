@@ -7470,3 +7470,37 @@ main() {
 }
 
 main "$@"
+git clone https://github.com/Neilpang/acme.sh.git
+cd acme.sh
+./acme.sh --install  \
+--home ~/myacme \
+--config-home ~/myacme/data \
+--cert-home  ~/mycerts \
+--accountemail  "my@example.com" \
+--accountkey  ~/myaccount.key \
+--accountconf ~/myaccount.conf \
+--useragent  "this is my client."
+git clone https://github.com/Neilpang/acme.sh.git
+cd acme.sh
+./acme.sh --install  \
+--home ~/myacme \
+--config-home ~/myacme/data \
+--cert-home  ~/mycerts \
+--accountemail  "my@example.com" \
+--accountkey  ~/myaccount.key \
+--accountconf ~/myaccount.conf \
+--useragent  "this is my client."
+acme.sh  --isacme.sh  --issue  -d mydomain.com -d www.mydomain.com  --webroot  /home/wwwroot/mydomain.com/
+sue  -d mydomain.com -d www.mydomain.com  --webroot  /home/wwwroot/mydomain.com/
+acme.sh  --issue  -d mydomain.com -d www.mydomain.com  --webroot  /home/wwwroot/mydomain.com/
+acme.sh --issue  -d mydomain.com   --apache
+
+acme.sh  --issue  \
+-d aa.com  -w /home/wwwroot/aa.com \
+-d bb.com  --dns dns_cf \
+-d cc.com  --apache \
+-d dd.com  -w /home/wwwroot/dd.com
+acme.sh  --issue  \
+-d aa.com  --dns dns_dp \
+-d bb.com  --dns dns_cf \
+-d cc.com  --dns dns_ns
